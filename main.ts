@@ -1,9 +1,8 @@
-import { makeWASocket, DisconnectReason, BufferJSON, useMultiFileAuthState,  } from '@whiskeysockets/baileys'
-import { Boom } from '@hapi/boom'
-import * as fs from 'fs'
+const { makeWASocket, DisconnectReason, BufferJSON, useMultiFileAuthState,  } = require('@whiskeysockets/baileys');
+const fs = require('fs');
 
 
-async function StartBaileys () {
+async function Start() {
     const { state, saveCreds } = await useMultiFileAuthState('Lib/Public/DataBase/Bayleys/Connection');
  
     const sakaki = makeWASocket({
@@ -11,11 +10,6 @@ async function StartBaileys () {
         printQRInTerminal: true,
         auth: state
     });
-    
-    sakaki.events = new Map ();
-    sakaki.commands = new Map () ;
-    sakaki.saveCreds = saveCreds;
-    
-
+     
 // run in main file
-StartBaileys()
+} Start()
