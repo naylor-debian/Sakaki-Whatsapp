@@ -1,5 +1,5 @@
 Sakaki-Serices!
-<img src="[https://i.ibb.co/qs37qDm/undefined-image.png](https://i.ibb.co/fqg2rBx/undefined-image-11.png)" alt="Texto Alternativo">
+<img src="https://i.ibb.co/fqg2rBx/undefined-image-11.png" alt="Texto Alternativo">
 
 
 # Installation globally with TypeScript.
